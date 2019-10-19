@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: url(img2.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+a {
+    color: white;
+}
+.flag{
+    max-width: 15px;
+    max-height: 15px;
+}
+#mainNav {
+    border: 0.5px solid rgba(197, 197, 197, 0.527);
+    width: 60%;
+    justify-content: space-between;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(236, 236, 236, 0.966);
+}
+
+.jumbotron {
+    background: transparent;
+    color: white;
+    text-align: center;
+    padding: 40px 0 0 0;
+    max-block-size: 60% 40%;
+}
+
+.link:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.btn {
+    color: rgba(236, 236, 236, 0.966);
+    border: 1px dashed rgba(236, 236, 236, 0.712);
+}
+
+.dropdown-menu {
+    border: 2px solid gray;
+    text-align: center;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.slogan {
+    color: #5f5f5f;
+    font-family: Titillium Web, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.slogan:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin:0px auto;
+}
+
+.mySlides img{
+    vertical-align: middle;
+    width: 100%;
+    height: 90%;
+}
+
+
+/* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+} */
+
+/* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+} */
+
+.text {
+    color: #e4e4e4;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+} */
+
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
