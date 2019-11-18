@@ -1,5 +1,5 @@
 var slideNumber = 0;
-var slides = document.getElementsByClassName("mySlides");
+var slides = document.getElementsByClassName("slideshow__slide");
 
 // for (var i = 1; i < slides.length; i++) {
 //     slides[i].style.display = "none";
