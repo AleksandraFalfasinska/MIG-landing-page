@@ -1,15 +1,17 @@
 var slideNumber = 0;
-var slide = document.getElementsByClassName("mySlides");
+var slides = document.getElementsByClassName("mySlides");
 
-for (var i = 1; i < slide.length; i++) {
-    slide[i].style.display = "none";
-    slide[i].style.opacity = "0";
-}
+// for (var i = 1; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//     // slides[i].style.opacity = "0"; 
+// }
 
 var xOpacity = 0;
 var goingUp = true;
+slides[slideNumber].style.display = "block";
 
 function slideShow() {
+    slides[slideNumber].style.opacity = xOpacity;
 
     if (goingUp == true) {
         xOpacity += 0.1;
@@ -18,24 +20,21 @@ function slideShow() {
             goingUp = false;
         }
     }
-
     else {
         xOpacity -= 0.1;
 
         if (xOpacity <= 0) {
             goingUp = true;
-            slide[slideNumber].style.display = "none";
+            slides[slideNumber].style.display = "none";
 
-            if (slideNumber < slide.length - 1) {
+            if (slideNumber < slides.length - 1) {
                 slideNumber++;
             }
             else {
                 slideNumber = 0;
             }
-            slide[slideNumber].style.display = "block";
+            slides[slideNumber].style.display = "block";
         }
     }
-
-    slide[slideNumber].style.opacity = xOpacity;
 }
-setInterval(slideShow, 100);
+setInterval(slideShow, 150);

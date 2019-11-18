@@ -8,38 +8,39 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Titillium+Web:400,400i,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="MIG.css">
 </head>
 
 <body>
 
-    <header class="d-flex  align-items-center flex-column">
+    <header class="header d-flex  align-items-center flex-column">
 
-        <div class="container-fluid">
-            <div class="row ">
-                <div class="col-4"></div>
-                <div class="col-4 d-flex justify-content-center">
-                    <a href="https://miggroup.com/pl/"><img id="logo" class="d-flex mb-3" src="logo1.png" alt="Logo">
+        <div class="header__container container-fluid">
+            <div class="header__logoDropdown row ">
+                <div class="logo__col col-4"></div>
+                <div class="logo__col col-4 d-flex justify-content-center">
+                    <a href="https://miggroup.com/pl/"><img class="logo__img d-flex mb-3" id="logo" src="logo1.png"
+                            alt="Logo">
                     </a>
                 </div>
 
-                <div class="col-4 d-flex justify-content-end">
-                    <div class="dropdown">
-                        <a class="nav-link dropdown-toggle link" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PL <img
-                                class="flag" src="flags/poland.png" alt="flaga Polski">
+                <div class="dropdown__col col-4 d-flex justify-content-end">
+                    <div class="dropdown__menu dropdown">
+                        <a class="dropdown__link nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PL <img
+                                class="dropdown__flag" src="flags/poland.png" alt="flaga Polski">
                         </a>
                         <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item link" href="#">PL <img class="flag" src="flags/poland.png" alt="flaga Polski">
+                            <a class="dropdown__link dropdown-item " href="#">PL <img class="dropdown__flag"
+                                    src="flags/poland.png" alt="flaga Polski">
                             </a>
-                            <a class="dropdown-item link" href="#">EN <img class="flag" src="flags/united-kingdom.png" alt="flaga Anglii">
+                            <a class="dropdown__link dropdown-item " href="#">EN <img class="dropdown__flag"
+                                    src="flags/united-kingdom.png" alt="flaga Anglii">
                             </a>
-                            <a class="dropdown-item link" href="#">DE <img class="flag" src="flags/germany.png" alt="flaga Niemiec">
+                            <a class="dropdown__link dropdown-item " href="#">DE <img class="dropdown__flag"
+                                    src="flags/germany.png" alt="flaga Niemiec">
                             </a>
                         </div>
                     </div>
@@ -47,54 +48,52 @@
             </div>
         </div>
 
-        <nav id="mainNav" class=" navbar  navbar-expand-md navbar-light">
 
+        <nav class="header__nav navbar  navbar-expand-md navbar-light">
             <a class="navbar-brand" href="#"></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <div class="container-fluent" style="width: 100%">
-                    <div class="row">
-                        <ul class="navbar-nav" style="width: 100%">
-                            <li class="nav-item col-sm-4 col-md-3">
-                                <a class="nav-link" href="https://miggroup.com/pl/o-firmie/">O FIRMIE</a>
+            <div class="nav__collapse collapse navbar-collapse " id="navbarSupportedContent">
+                <div class="nav__itemsContainer container-fluid" style="width: 100%">
+                    <div class="itemsContainer__row row">
+                        <ul class="itemsContainer__list navbar-nav" style="width: 100%">
+                            <li class="itemsContainer__element nav-item col-sm-4 col-md-3">
+                                <a class="nav__link nav-link" href="https://miggroup.com/pl/o-firmie/">O FIRMIE</a>
                             </li>
-                            <li class="nav-item col-sm-4 col-md-3">
-                                <a class="nav-link" href="https://miggroup.com/pl/aktualnosci/">AKTUALNOŚCI</a>
+                            <li class="itemsContainer__element nav-item col-sm-4 col-md-3">
+                                <a class="nav__link nav-link" href="https://miggroup.com/pl/aktualnosci/">AKTUALNOŚCI</a>
                             </li>
-                            <li class="nav-item col-sm-2 col-md-3">
-                                <a class="nav-link" href="https://miggroup.com/pl/kariera/">KARIERA</a>
+                            <li class="itemsContainer__element nav-item col-sm-2 col-md-3">
+                                <a class="nav__link nav-link" href="https://miggroup.com/pl/kariera/">KARIERA</a>
                             </li>
-                            <li class="nav-item col-sm-2 col-md-3">
-                                <a class="nav-link" href="https://miggroup.com/pl/kontakt-2/">KONTAKT</a>
+                            <li class="itemsContainer__element nav-item col-sm-2 col-md-3">
+                                <a class="nav__link nav-link" href="https://miggroup.com/pl/kontakt-2/">KONTAKT</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-
         </nav>
+       
 
         <div class="jumbotron mt-3">
-            <h1 id="name" class="display-5 mb-5">
+            <h1 id="name" class="mb-5">
                 <a class="link" href="https://miggroup.com/pl/" title="MARKETING INVESTMENT GROUP">MARKETING INVESTMENT
                     GROUP</a>
             </h1>
-            <h1 class="display-6">PASJA I INDYWIDUALIZM</h1>
+            <h1>PASJA I INDYWIDUALIZM</h1>
             <a class="btn btn-outline-secondary btn-lg mt-5" href="https://miggroup.com/pl/o-firmie/"
-                role="button">Dowiedz
-                się więcej
-                <i class="fas fa-angle-right"></i>
+                role="button">Dowiedz się więcej ->
             </a>
         </div>
 
     </header>
 
     <section>
-        <p class="slogan"><a class="display-4  mt-4 mb-0 slogan" href="#slideshow-label">Nasze sklepy</a></p>
+        <a class="display-4  mt-4 mb-0 d-flex justify-content-center slogan" href="#slideshow-label">Nasze sklepy</a>
 
         <div id="slideshow-label" class="slideshow-container">
 
@@ -102,10 +101,12 @@
                 <img src="shops/sizeer_50.png" usemap="#image-map1">
 
                 <map name="image-map1">
-                    <area target="_blank" alt="Sizeer" href="https://sklep.sizeer.com/" coords="504,4,6,354"
+                    <area target="_blank" alt="Sizeer" href="https://sklep.sizeer.com/" coords="501,245,308,126"
                         shape="rect">
-                    <area target="_blank" alt="50style" href="https://50style.pl/" coords="505,3,1038,354" shape="rect">
+                    <area target="_blank" alt="50style" href="https://50style.pl/" coords="504,127,721,245"
+                        shape="rect">
                 </map>
+
                 <div class="text">Marketing Investment Group</div>
             </div>
 
@@ -113,10 +114,11 @@
                 <img src="shops/up8_symbiosis.png" usemap="#image-map2">
 
                 <map name="image-map2">
-                    <area target="_blank" alt="up8" href="https://up8.com/" coords="491,3,3,349" shape="rect">
-                    <area target="_blank" alt="Symbiosis" href="https://www.symbiosis.com.pl/"
-                        coords="500,4,1034,349,967,337" shape="rect">
+                    <area target="_blank" alt="up8" href="https://up8.com/" coords="506,235,328,113" shape="rect">
+                    <area target="_blank" alt="Symbiosis" href="https://www.symbiosis.com.pl/" coords="510,113,685,235"
+                        shape="rect">
                 </map>
+
                 <div class="text">Marketing Investment Group</div>
             </div>
 
@@ -124,11 +126,12 @@
                 <img src="shops/Timberland_lacoste.png" usemap="#image-map3">
 
                 <map name="image-map3">
-                    <area target="_blank" alt="Timberland" href="https://e-timberland.pl/" coords="512,1,0,344"
+                    <area target="_blank" alt="Timberland" href="https://e-timberland.pl/" coords="345,116,532,234"
                         shape="rect">
-                    <area target="_blank" alt="LACOSTE" href="https://www.lacoste.pl/" coords="516,1,1040,344"
+                    <area target="_blank" alt="LACOSTE" href="https://www.lacoste.pl/" coords="535,114,717,234"
                         shape="rect">
                 </map>
+
                 <div class="text">Marketing Investment Group</div>
             </div>
 
@@ -136,11 +139,12 @@
                 <img src="shops/GaleriaMarek_umbro.png" usemap="#image-map4">
 
                 <map name="image-map4">
-                    <area target="_blank" alt="GaleriaMarek" href="https://galeriamarek.pl/" coords="527,1,3,353"
+                    <area target="_blank" alt="GaleriaMarek" href="https://galeriamarek.pl/" coords="529,118,310,229"
                         shape="rect">
-                    <area target="_blank" alt="Umbro" href="https://50style.pl/marki/umbro" coords="534,1,1036,353"
+                    <area target="_blank" alt="Umbro" href="https://50style.pl/marki/umbro" coords="535,116,714,229"
                         shape="rect">
                 </map>
+
                 <div class="text">Marketing Investment Group</div>
             </div>
 
@@ -149,10 +153,11 @@
 
                 <map name="image-map5">
                     <area target="_blank" alt="NewEra" href="https://sklep.sizeer.com/marki/new-era"
-                        coords="1,352,510,7" shape="rect">
-                    <area target="_blank" alt="Lotto" href="https://50style.pl/marki/lotto" coords="514,10,1041,352"
+                        coords="483,118,314,223" shape="rect">
+                    <area target="_blank" alt="Lotto" href="https://50style.pl/marki/lotto" coords="502,118,697,224"
                         shape="rect">
                 </map>
+
                 <div class="text">Marketing Investment Group</div>
             </div>
 
@@ -161,36 +166,18 @@
 
                 <map name="image-map6">
                     <area target="_blank" alt="Confront" href="https://sklep.sizeer.com/marki/confront"
-                        coords="483,2,0,349" shape="rect">
-                    <area target="_blank" alt="Feewear" href="https://50style.pl/marki/feewear" coords="492,3,1029,349"
+                        coords="332,127,515,238" shape="rect">
+                    <area target="_blank" alt="Feewear" href="https://50style.pl/marki/feewear" coords="519,125,692,238"
                         shape="rect">
                 </map>
+
                 <div class="text">Marketing Investment Group</div>
             </div>
 
-            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
         </div>
 
-
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-        </div> -->
-
     </section>
-    <aside>
 
-    </aside>
-    <footer>
-
-    </footer>
     <script src="MIG3.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
