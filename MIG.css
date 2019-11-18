@@ -19,8 +19,6 @@ body {
     text-decoration: none;
 }
 
-/* czy lepiej znów zrobić globalne linki, czy zrobić taki podział, żeby było widać gdzie szukać tych href? */
-
 .dropdownToggler__flag, .dropdownMenu__flag {
     max-width: 15px;
     max-height: 15px;
@@ -44,8 +42,6 @@ body {
 .navbar-light .navbar-nav .nav-link {
     color: rgba(236, 236, 236, 0.966);
 }
-
-/* tej klasy nie jestem w stanie zmienić, żeby kolor został biały z efektem "hover" na czarny */
 
 .header__jumbotron {
     background: transparent;
